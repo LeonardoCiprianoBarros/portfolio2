@@ -58,18 +58,26 @@
     gap: 82px;
 }
 
+
+
 .apresentacao__projetos__titulo{
     font-size: 2.25rem;
     font-family: var(--fonte-primaria);
 }
 
-.apresentacao__projetos__card{
+.apresentacao__projetos__card {
     position: relative;
     border: 1px solid var(--cor-terciaria);
     width: 350px;
     height: 300px;
-    
+    transition: transform 0.35s ease-in-out;
 }
+
+.apresentacao__projetos__card:hover{
+    transform: scale(1.2); 
+}
+
+
 
 .apresentacao__projetos__card__btn{
     font-family: var(--fonte-primaria);
@@ -81,6 +89,8 @@
     background-color: var(--cor-terciaria);   
     transition: background 1s, box-shadow 1s, text-shadow 1s;  
 }
+
+
 
 .apresentacao__projetos__card__btn:hover{
     transition: 1s;
@@ -109,7 +119,7 @@
 }
 
 .card4{
-    background-image: url("../assets/emBreve.png");
+    background-image: url("../assets/imc.png");
     background-repeat: no-repeat; 
     background-size: cover;
 }
@@ -126,3 +136,15 @@
     background-size: cover;
 }
 
+@keyframes float {
+    0% {
+        transform: translatey(0px)
+    }
+    50% {
+        transform: translatey(-30px)
+    }
+    100% {
+        transform: translatey(0px)
+    }
+     
+}
